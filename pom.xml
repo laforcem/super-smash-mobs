@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- artifact information -->
-    <groupId>whoneedspacee.ssmos</groupId>
-    <artifactId>SSMOS</artifactId>
+    <groupId>dev.laforce.ssm-os</groupId>
+    <artifactId>ssm-os</artifactId>
     <version>1.0</version>
 
     <!-- compiler properties (needs to use java 8 for minecraft 1.8) -->
@@ -52,11 +52,10 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- kinda self-explanatory if you ask me -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.11.0</version>
+            <version>2.19.0</version>
         </dependency>
     </dependencies>
 
@@ -110,7 +109,7 @@
                                     <type>${project.packaging}</type>
                                 </artifactItem>
                             </artifactItems>
-                            <outputDirectory>ssmos-template-server/v1.1/plugins</outputDirectory>
+                            <outputDirectory>minecraft-server/plugins</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
