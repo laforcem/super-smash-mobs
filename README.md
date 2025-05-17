@@ -1,30 +1,48 @@
-# SSMOS
+# Super Smash Mobs (Open Source Edition)
 
-SSM Open Source Recreation for community usage
+An open-source re-creation of Mineplex's iconic minigame Super Smash Mobs!
 
-Feel free to fork the code and edit at your leisure 
+This is not guaranteed to be a perfect carbon copy of the original game. Rather, the goal is for this project to be a "faithful *enough*" version with appropriate changes and improvements.
 
-https://discord.gg/GSnKwyjyU8
+This code was originally forked from [Whoneedspacee/SSMOS](https://github.com/Whoneedspacee/SSMOS).
 
-# Dependencies (required)	
+## Download
 
-PandaSpigot [repo](https://github.com/hpfxd/PandaSpigot)
+Downloads may be found in the GitHub releases.
 
-Spigot 1.8.9
+## Installation
 
-# Development Env Setup
+> [!NOTE]
+This guide assumes that you are familiar with the basics of running a Minecraft server. If you're not, check out this wiki article. This repo includes a sample Docker Compose file if it helps.
 
-1. Download the Source Code from https://github.com/Whoneedspacee/SSMOS
-2. Run your IDE (probably intellij) and open up the SSMOS project
-3. Allow the build scripts to initialize the developer environment
-4. Press "maven" and "reload all maven projects" button (alternatively right-click "SSMOS" in the maven sub-menu and press "generate sources and update folders")
-5. Once this process is finished, the developer environment should be ready and all your libraries compiled and ready to go
+TODO: compose file
 
-# Compiling code & gameplay
+1. Download [PandaSpigot](https://github.com/hpfxd/PandaSpigot) to use as your server JAR. Make sure your server
+
+2. Place `super-smash-mobs-1.0.jar` inside your `plugins/` directory.
+
+3. TODO: map instructions
+
+## Compiling
+
+*The guide below uses IntelliJ IDEA Community Edition 2025.1.1.*
+
+1. Clone this repository and open it with your IDE. Let any initialization finish before proceeding.
+
+2. TODO: add build configurations for IntelliJ?
+
+### Iterative testing
 
 1. Press the "maven" menu, expand the "lifecycle" tab and click the "install" button
-2. Wait for the IDE to successfully compile your code, which should end in a "BUILD SUCCESS"
-3*. If you want to quickly and easily test your changes, you can run the start.bat within the "ssmos-template-server", since the .jar automatically builds to the plugins folder
-4*. Alternatively, under the "projects" menu, expand the "target" directory, and copy-paste the file titled "SSMOS-1.0.jar" into your desired plugins folder
 
-note: The template server does not come with maps pre-installed, you will have to gather these yourself. For more information, look at the readme file within that directory
+2. Wait for the IDE to successfully compile your code, which should end in a "BUILD SUCCESS"
+
+3. If you want to quickly and easily test your changes, you can run the start.bat within the "ssmos-template-server", since the .jar automatically builds to the plugins folder
+
+4. Alternatively, under the "projects" menu, expand the "target" directory, and copy-paste the file titled "SSMOS-1.0.jar" into your desired plugins folder
+
+note: The template server does not come with maps pre-installed, you will have to gather these yourself.
+
+## Contributing
+
+Pull requests and contributions are both welcomed and encouraged! If you have a large set of changes, please try to split it up into different branches/PR's so that it's easier to review.
