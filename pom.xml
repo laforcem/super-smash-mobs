@@ -4,38 +4,38 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- artifact information -->
+    <!-- Artifact metadata -->
     <groupId>dev.laforce.ssm-os</groupId>
     <artifactId>ssm-os</artifactId>
     <version>1.0</version>
 
-    <!-- compiler properties (needs to use java 8 for minecraft 1.8) -->
+    <!-- Compiler properties -->
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncodings>UTF-8</project.build.sourceEncodings>
     </properties>
 
-    <!-- panda-spigot api -->
     <repositories>
+        <!-- For pandaspigot -->
         <repository>
             <id>hpfxd-repo</id>
             <url>https://repo.hpfxd.com/releases/</url>
         </repository>
 
-        <!-- spigot for nms -->
+        <!-- spigot for net.minecraft.server -->
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
 
+        <!-- Alternate spigot repo -->
         <repository>
             <id>elmakers-repo</id>
             <url>https://maven.elmakers.com/repository/</url>
         </repository>
     </repositories>
 
-    <!-- panda-spigot api -->
     <dependencies>
         <dependency>
             <groupId>com.hpfxd.pandaspigot</groupId>
@@ -44,7 +44,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- spigot for nms -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
